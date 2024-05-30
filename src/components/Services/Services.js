@@ -6,6 +6,7 @@ import digtalMarketing from "../../assets/digital-marketing.png";
 import graphicDesign from "../../assets/graphic-design.png";
 import seo from "../../assets/seo.png";
 import branding from "../../assets/branding.png";
+import Image from 'next/image';
 
 const services = [
     {
@@ -48,7 +49,7 @@ const services = [
 
 const Services = () => {
     return (
-        <div style={{ padding: "50px 30px", background: '#13072E' }}>
+        <div className='bg-[#13072E] px-24' >
             <h1 className='font-semibold text-xl text-center text-[#8B3EE2]'>
                 Services
             </h1>
@@ -63,9 +64,9 @@ const Services = () => {
                     services.map((service) => (
                         <div key={service}>
                             <Link href={service.pathname}>
-                                <div className='bg-[#8B3EE2]  bg-opacity-20 text-center p-5 text-white rounded-lg border border-[#8B3EE2] border-opacity-50'>
-                                    <img src={service.icon} alt="" />
-                                    <h2 className='mb-3 font-semibold text-2xl'>{service.title}</h2>
+                                <div className='bg-[#8B3EE2] bg-opacity-20 text-center p-5 text-white rounded-lg border border-[#8B3EE2] border-opacity-50'>
+                                    <div className='flex justify-center items-center mb-3'>                                <Image src={service.icon} width={100} height={100} alt="Spark Net Corporation" />
+                                    </div>                                    <h2 className='mb-3 font-semibold text-2xl'>{service.title}</h2>
                                     <p className='text-[14px]'>{service.description.slice(0, 150)}</p>
                                 </div>
                             </Link>
