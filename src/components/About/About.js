@@ -10,9 +10,9 @@ const About = () => {
                     <div class="md:w-1/2 flex flex-col items-start">
                         <span class="inline-block px-2 rounded text-white text-sm font-medium tracking-widest">ABOUT US</span>
                         <h2 class="sm:text-5xl text-2xl title-font font-bold text-[#8B3EE2] mt-4 mb-4">We bring solutions to make life easier for our customers.</h2>
-                        <p class="leading-relaxed">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                        <p class="leading-relaxed">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.
                             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
-                            by injected humour, or randomised words which don't look even slightly believable.</p>
+                            by injected humour, or randomised words which dont look even slightly believable.</p>
                         <button className="bg-[#8B3EE2] px-8 py-4 flex rounded-full mt-5">
                             Get Started
                             <svg width="50px" height="20px" viewBox="0 0 66 43" version="1.1">

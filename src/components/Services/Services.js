@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import web from "../../assets/web.png";
 import app from "../../assets/app.png";
