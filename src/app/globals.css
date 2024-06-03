@@ -2,14 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
 }
 
-body{
-  /* background: linear-gradient(to left, #13072E, #3F2182); */
+body {
   background: #13072E;
-
 }
 
 
@@ -35,7 +33,7 @@ body{
   background: #252764;
 }
 
-.poppins{
+.poppins {
   font-family: var(--font-poppins);
 }
 
@@ -45,7 +43,7 @@ body{
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  background: #13072E;
+  background: #fff;
   border-radius: 40px;
   position: relative;
 }
@@ -70,6 +68,7 @@ button:hover {
   box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
   transform: translateY(-3px);
 }
+
 /*button pressing effect*/
 button:active {
   box-shadow: none;
@@ -85,13 +84,13 @@ button:active {
   padding: 20px 46px 20px 26px;
 }
 
-#top-section{
+#top-section {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0, 0.5), rgba(0, 0, 0, 0.5)), rgb(215, 215, 255);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), rgb(215, 215, 255);
 }
 
-#headline{
+#headline {
   font-size: 65px;
   background: -webkit-linear-gradient(#5645ef, #ff4646);
   -webkit-background-clip: text;
@@ -101,21 +100,21 @@ button:active {
   padding: 20px;
 }
 
-#sub-headline{
+#sub-headline {
   font-size: 30px;
   height: full;
   text-align: left;
   padding: 20px;
 }
 
-#particles canvas{
+#particles canvas {
   z-index: -1;
   height: 100%;
   width: 100%;
   position: absolute;
 }
 
-.gradient-button{
+.gradient-button {
   background: linear-gradient(#2a1261, #ff6060);
 }
 
@@ -128,8 +127,8 @@ button:active {
   background-color: rgba(25, 0, 82, 0.678);
   color: white;
   box-shadow: 0px 10px 10px rgb(36, 0, 103) inset,
-  0px 5px 10px rgba(5, 5, 5, 0.212),
-  0px -10px 10px rgb(38, 0, 108) inset;
+    0px 5px 10px rgba(5, 5, 5, 0.212),
+    0px -10px 10px rgb(38, 0, 108) inset;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -163,8 +162,8 @@ button:active {
   background-color: rgba(25, 0, 82, 0.678);
   color: white;
   box-shadow: 0px 10px 10px rgb(36, 0, 103) inset,
-  0px 5px 10px rgba(5, 5, 5, 0.212),
-  0px -10px 10px rgb(38, 0, 108) inset;
+    0px 5px 10px rgba(5, 5, 5, 0.212),
+    0px -10px 10px rgb(38, 0, 108) inset;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -292,7 +291,7 @@ button:active {
 .service-card::after {
   bottom: 0;
   left: 0;
-  border-radius: 0 100%  0 15px;
+  border-radius: 0 100% 0 15px;
   color: white;
 }
 
