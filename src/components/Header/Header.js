@@ -7,31 +7,25 @@ import ParticlesComponent from "@/components/Particles/Particles";
 
 const Header = () => {
   return (
-    <div className="px-24 flex justify-center items-center mb-20">
-      <Container>
-        <ParticlesComponent id="particles" />
+    <div className="lg:flex justify-center items-center lg:px-24 px-5 py-12">
+      <ParticlesComponent id="particles" />
+      <div>
         <h1 id="headline" className="font-bold">
-
           <TypeIt
-
             options={{
               strings: ["Empowering Innovation With Digital Solutions"],
               speed: 27
             }}
             getAfterInit={(instance) => {
-
               instance.destroy();
               return instance;
             }}
           />
         </h1>
-
-        <h4 className="text-white" style={{ padding: 10 }}>
-
+        <h4 className="text-white" >
           Your destination for digital solutions. Our customized digital solutions empower organizations to excel in the digital realm, providing smooth integration and individualized assistance for lasting achievements. Explore our services for seamless integration and personalized support.
         </h4>
-
-        <button className="bg-[#8B3EE2] px-8 py-4 flex rounded-full mt-5 text-white">
+        <button className="bg-[#8B3EE2] hover:bg-pink-600 px-8 py-4 flex rounded-full mt-5 text-white">
           Get Started
           <svg width="50px" height="20px" viewBox="0 0 66 43" version="1.1">
             <g id="arrow" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd">
@@ -41,10 +35,8 @@ const Header = () => {
             </g>
           </svg>
         </button>
-      </Container>
-
+      </div>
       <Image src={TopImage} width={400} height={400} style={{ margin: 20 }} alt="Spark Net Corporation" />
-
     </div>
   );
 };

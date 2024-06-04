@@ -48,24 +48,21 @@ const services = [
 
 const Services = () => {
     return (
-        <div className='bg-[#13072E] px-24' >
-            <h1 className='font-semibold text-xl text-center text-[#8B3EE2]'>
-                Services
-            </h1>
-
-            <h2 className='text-white text-center text-2xl' >
+        <div className='bg-[#13072E] lg:px-24 px-5 py-12' >
+            <h1 className='font-semibold text-xl text-center text-[#8B3EE2]'> SERVICES</h1>
+            <h2 className='text-white text-center text-lg lg:text-2xl' >
                 Experience Advanced Solutions From Concept To Deployment Leveraging <br />Full-Stack Expertise
             </h2>
-
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '30px', margin: "50px 0" }}>
-
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-12" >
                 {
                     services.map((service) => (
                         <div key={service}>
                             <Link href={service.pathname}>
                                 <div className='bg-[#8B3EE2] bg-opacity-20 text-center p-5 text-white rounded-lg border border-[#8B3EE2] border-opacity-50'>
-                                    <div className='flex justify-center items-center mb-3'>                                <Image src={service.icon} width={100} height={100} alt="Spark Net Corporation" />
-                                    </div>                                    <h2 className='mb-3 font-semibold text-2xl'>{service.title}</h2>
+                                    <div className='flex justify-center items-center mb-3'>
+                                        <Image src={service.icon} width={100} height={100} alt="Spark Net Corporation" />
+                                    </div>
+                                    <h2 className='mb-3 font-semibold text-2xl'>{service.title}</h2>
                                     <p className='text-[14px]'>{service.description.slice(0, 150)}</p>
                                 </div>
                             </Link>

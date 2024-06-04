@@ -75,7 +75,7 @@ const TabsCustomAnimation = () => {
     return (
         <div>
             <Tabs id="custom-animation" value={activeTab}>
-                <TabsHeader className="mx-48 mb-5">
+                <TabsHeader className="lg:mx-48 mb-5">
                     {uniqueTabs.map(({ label, value }) => (
                         <Tab
                             key={value}
